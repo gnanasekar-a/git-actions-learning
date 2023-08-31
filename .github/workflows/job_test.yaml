@@ -1,14 +1,19 @@
-name: 
-  job test
-on:
-  push
-jobs:
+name:
+  job_test
+on: 
+  push:
+  workflow_distpatch:
+job:
   job1:
     runs-on: ubuntu-latest
-      run:
-        echo date
+    steps:
+    run: date
   job2:
-    runs-on: windows-latest
-    needs: [job1]
-      run:
-        echo date      
+    runs-on: ubuntu-latest
+    steps:
+    run: date
+  job3:
+  needs: [job1, job2]
+  runs-on: ubuntu-latest
+    steps:
+    run: date
