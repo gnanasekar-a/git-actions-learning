@@ -3,12 +3,12 @@ name:
 on:
   push
 jobs:
-  job1
+  job1:
     runs-on: ubuntu-latest
-      run: |
+      run:
         echo date
-  job2
+  job2:
     runs-on: windows-latest
     needs: [job1]
-      run: |
+      run:
         echo date      
