@@ -5,10 +5,10 @@ on:
 jobs:
   job1
     runs-on: ubuntu-latest
-    run: |
-      echo date
+      run: |
+        echo date
   job2
     runs-on: windows-latest
     needs: [job1]
-    run: |
-      echo date      
+      run: |
+        echo date      
