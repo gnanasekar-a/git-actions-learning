@@ -7,13 +7,13 @@ job:
   job1:
     runs-on: ubuntu-latest
     steps:
-    run: date
+    - run: date
   job2:
     runs-on: ubuntu-latest
     steps:
-    run: date
+    - run: date
   job3:
   needs: [job1, job2]
   runs-on: ubuntu-latest
     steps:
-    run: date
+    - run: date
