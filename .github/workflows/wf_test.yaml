@@ -17,7 +17,9 @@ jobs:
   wf_job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Download a Build Artifact
-        uses: actions/upload-artifact@v2.1.1
-  
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: wf job artifact
+          path: .
   
