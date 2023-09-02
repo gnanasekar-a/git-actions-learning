@@ -1,0 +1,23 @@
+name:
+  workflow_test
+
+on: 
+  push
+
+jobs:
+  wf_job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.6.0
+      - name: Print date
+        run: |
+          date
+      
+  wf_job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v2.1.1
+  
+  
