@@ -1,6 +1,6 @@
 name: input workflow
 on:
-  workflow_dispatch:
+  push:
     inputs:
       name:
         description: 'name of the person'
