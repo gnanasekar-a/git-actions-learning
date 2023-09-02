@@ -2,7 +2,7 @@ name:
   workflow_test
 
 on: 
-  push
+  workflow_dispatch
 
 jobs:
   wf_job1:
