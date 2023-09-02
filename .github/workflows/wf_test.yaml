@@ -21,5 +21,5 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: wf job artifact
-          path: .
+          path: .github/
   
